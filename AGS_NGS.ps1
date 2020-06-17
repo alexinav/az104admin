@@ -4,7 +4,7 @@ Login-AzureRmAccount
 
 $RG = "zGroup"
 $location = "westeurope"
-
+#
 $webASG = New-AzureRmApplicationSecurityGroup -ResourceGroupName $RG -Name "WebASG" -Location $location
 $webASG = New-AzureRmApplicationSecurityGroup -ResourceGroupName $RG -Name "sqlASG" -Location $location
 
