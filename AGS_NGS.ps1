@@ -5,8 +5,8 @@ Login-AzureRmAccount
 $RG = "zGroup"
 $location = "westeurope"
 
-$webASG = New-AzureRmApplicationSecurityGroup -ResourceGroupName $RG -Name "WebASG" -Location $location
-$webASG = New-AzureRmApplicationSecurityGroup -ResourceGroupName $RG -Name "sqlASG" -Location $location
+$webASG = New-AzureRmApplicationSecurityGroup -ResourceGroupName $RG -Name "webASG" -Location $location
+$sqlASG = New-AzureRmApplicationSecurityGroup -ResourceGroupName $RG -Name "sqlASG" -Location $location
 
 $webRule = New-AzureRmNetworkSecurityRuleConfig `
     -Name "AllowHttps" `
